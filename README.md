@@ -1,4 +1,5 @@
-![Social Media Small](https://user-images.githubusercontent.com/16481834/70382560-e3864a00-1923-11ea-8628-10b377475a46.png)
+![Image Banner](https://user-images.githubusercontent.com/16481834/70382660-0d8c3c00-1925-11ea-9419-191a47b207c3.png)
+
 Zenith UI is a dark &amp; light themed design system built in Material-UI + React using Brad Frost's atomic design philosophy.
 
 # Motivation
