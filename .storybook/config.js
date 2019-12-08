@@ -1,10 +1,11 @@
-import { configure } from "@storybook/react";
-import { themes } from "@storybook/theming";
+import { configure, addParameters } from "@storybook/react";
+import zenithUI from './theme';
+
 
 // Option defaults.
 addParameters({
   options: {
-    theme: themes.dark
+    theme: zenithUI
   }
 });
 

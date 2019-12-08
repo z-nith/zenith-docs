@@ -24,5 +24,6 @@ These technologies are more for showcasing the components in isolation
 1. Storybook
 
 # Quick Start
+You can view all components by running `Storybook` via `yarn storybook`
 
 # Contributing
