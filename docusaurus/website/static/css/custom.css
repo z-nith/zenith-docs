@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
- 
+
 /* your custom css */
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
@@ -20,4 +20,102 @@
 }
 
 @media only screen and (min-width: 1500px) {
+}
+
+/**
+Global Overrides
+**/
+body {
+  background-color: #12151c;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Anonymous Pro", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+a {
+    color: #3373ff 
+}
+
+a:hover {
+  color: white;
+}
+
+/** Home Screen splash container **/
+.homeContainer {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  background-image: url("/img/frostedGlassHeroImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectTitleContainer {
+  padding-bottom: 24px;
+}
+
+.projectTitle {
+  color: white;
+  display: inline;
+  font-size: 250%;
+}
+
+.projectLogoInline {
+  display: inline;
+  padding-right: 8px;
+}
+
+/** Special Text Styles **/
+.primaryText {
+  color: #3373ff;
+}
+
+.tagline {
+  display: block;
+}
+
+/** Components **/
+
+.buttonWrapper {
+  margin: 0px 16px 0px 16px;
+}
+
+.button {
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  padding: 10px 24px 10px 24px;
+  min-width: 120px;
+  border: none;
+}
+
+.primaryButton {
+  background-color: #3373ff;
+}
+
+.primaryButton:hover {
+  background-color: white;
+  color: #3373ff;
+}
+
+.secondaryButton {
+  background-color: #3a3c43;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: #3a3c43;
 }
