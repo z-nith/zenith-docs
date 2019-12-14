@@ -1,6 +1,6 @@
 ![Zenith UI Logo](https://user-images.githubusercontent.com/16481834/70842373-745b9a80-1de8-11ea-8386-7c52a98a6c32.png)
 
-A dark themed design system built in using various design philosophies and robust frontend technologies
+A dark themed design system built using various design philosophies and robust frontend technologies.
 
 
 # Motivation
