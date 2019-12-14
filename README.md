@@ -1,6 +1,7 @@
-![Image Banner](https://user-images.githubusercontent.com/16481834/70382660-0d8c3c00-1925-11ea-9419-191a47b207c3.png)
+![Zenith UI Logo](https://user-images.githubusercontent.com/16481834/70842373-745b9a80-1de8-11ea-8386-7c52a98a6c32.png)
 
-Zenith UI is a dark &amp; light themed design system built in Material-UI + React using Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/) philosophy.
+A dark themed design system built in using various design philosophies and robust frontend technologies
+
 
 # Motivation
 This repository's purpose serves as a thought experiment of Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/) principles in React. Rather than serving as an actual UI library (though there are plans to implement a standalone repo for such a purpose), the main goal of this project is engineer a scalable frontend application that adheres to the following principles:

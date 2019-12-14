@@ -119,4 +119,15 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# Docusaurus
+lib/core/metadata.js
+lib/core/MetadataBlog.js
+
+website/translated_docs
+website/build/
+website/yarn.lock
+website/node_modules
+website/i18n/*
+
+
 # End of https://www.gitignore.io/api/node,macos
