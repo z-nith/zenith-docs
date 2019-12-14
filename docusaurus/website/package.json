@@ -1,14 +1,22 @@
 {
-  "scripts": {
-    "examples": "docusaurus-examples",
-    "start": "docusaurus-start",
-    "build": "docusaurus-build",
-    "publish-gh-pages": "docusaurus-publish",
-    "write-translations": "docusaurus-write-translations",
-    "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
-  },
-  "devDependencies": {
-    "docusaurus": "^1.14.3"
-  }
+    "scripts": {
+        "examples": "docusaurus-examples",
+        "start": "docusaurus-start",
+        "build": "docusaurus-build",
+        "publish-gh-pages": "docusaurus-publish",
+        "write-translations": "docusaurus-write-translations",
+        "version": "docusaurus-version",
+        "rename-version": "docusaurus-rename-version"
+    },
+    "devDependencies": {
+        "docusaurus": "^1.14.3",
+        "husky": "^1.2.0",
+        "prettier": "^1.15.3",
+        "pretty-quick": "^1.8.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    }
 }
