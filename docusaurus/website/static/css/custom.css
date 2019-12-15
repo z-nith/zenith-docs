@@ -26,9 +26,9 @@
 Global Overrides
 **/
 body {
-  background-color: #12151c;
-  color: rgba(255, 255, 255, 0.87);
-  font-family: "Anonymous Pro", Arial, sans-serif;
+    background-color: $primaryColor;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Anonymous Pro', Arial, sans-serif;
 }
 
 h1,
@@ -37,85 +37,116 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(255, 255, 255, 0.87);
-  font-family: "Poppins", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 a {
-    color: #3373ff 
+    color: $dodgerBlue;
 }
 
 a:hover {
-  color: white;
+    color: white;
 }
 
 /** Home Screen splash container **/
 .homeContainer {
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-attachment: fixed;
-  background-image: url("/img/frostedGlassHeroImage.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    background-image: url('/img/frostedGlassHeroImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .projectTitleContainer {
-  padding-bottom: 24px;
+    padding-bottom: 24px;
 }
 
 .projectTitle {
-  color: white;
-  display: inline;
-  font-size: 250%;
+    color: white;
+    display: inline;
+    font-size: 250%;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+    .projectTitle {
+        color: white;
+        display: inline;
+        font-size: 170%;
+    }
 }
 
 .projectLogoInline {
-  display: inline;
-  padding-right: 8px;
+    display: inline;
+    padding-right: 8px;
 }
 
 /** Special Text Styles **/
 .primaryText {
-  color: #3373ff;
+    color: $dodgerBlue;
 }
 
 .tagline {
-  display: block;
+    display: block;
 }
 
 /** Components **/
 
 .buttonWrapper {
-  margin: 0px 16px 0px 16px;
+    margin: 0px 16px 0px 16px;
 }
 
 .button {
-  border-radius: 12px;
-  color: rgba(255, 255, 255, 0.87);
-  font-family: "Poppins", Arial, sans-serif;
-  font-weight: bold;
-  text-transform: none;
-  padding: 10px 24px 10px 24px;
-  min-width: 120px;
-  border: none;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: none;
+    padding: 10px 24px 10px 24px;
+    min-width: 120px;
+    border: none;
 }
 
 .primaryButton {
-  background-color: #3373ff;
+    background-color: $dodgerBlue;
 }
 
 .primaryButton:hover {
-  background-color: white;
-  color: #3373ff;
+    background-color: white;
+    color: $dodgerBlue;
 }
 
 .secondaryButton {
-  background-color: #3a3c43;
+    background-color: $fadedGrey;
 }
 
 .secondaryButton:hover {
-  background-color: white;
-  color: #3a3c43;
+    background-color: white;
+    color: $fadedGrey;
+}
+
+/**Main Container **/
+.mainContainer {
+    padding: 0px;
+}
+
+/**Features**/
+.block {
+    min-height: 300px;
+}
+
+.darkBlock {
+    background-color: $secondaryColor;
+}
+
+.lightBlock {
+    background-color: $aboveForeground;
+}
+
+.gridContent {
+    margin: 1em;
+    padding-bottom: 2em;
 }

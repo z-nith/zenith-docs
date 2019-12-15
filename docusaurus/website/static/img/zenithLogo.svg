@@ -4,28 +4,20 @@
     <title>favico</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="90.8840758%" y1="90.278155%" x2="8.52807493%" y2="9.29983388%" id="linearGradient-1">
-            <stop stop-color="#3570E4" offset="0%"></stop>
-            <stop stop-color="#1459E2" offset="100%"></stop>
-        </linearGradient>
-        <linearGradient x1="100%" y1="84.9471149%" x2="16.0753909%" y2="0%" id="linearGradient-2">
-            <stop stop-color="#3570E4" offset="0%"></stop>
-            <stop stop-color="#1459E2" offset="100%"></stop>
-        </linearGradient>
+        <rect id="path-1" x="5" y="5" width="22" height="22" rx="3.864"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1.61" y="-1.61" width="25.22" height="25.22">
+            <rect x="3.39" y="3.39" width="25.22" height="25.22" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
         <rect id="path-3" x="5" y="5" width="22" height="22" rx="3.864"></rect>
         <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1.61" y="-1.61" width="25.22" height="25.22">
             <rect x="3.39" y="3.39" width="25.22" height="25.22" fill="white"></rect>
             <use xlink:href="#path-3" fill="black"></use>
         </mask>
-        <rect id="path-5" x="5" y="5" width="22" height="22" rx="3.864"></rect>
-        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1.61" y="-1.61" width="25.22" height="25.22">
-            <rect x="3.39" y="3.39" width="25.22" height="25.22" fill="white"></rect>
-            <use xlink:href="#path-5" fill="black"></use>
-        </mask>
     </defs>
     <g id="favico" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M13.0753125,9 L18.9246875,9 C21.1754204,9 23,10.8245796 23,13.0753125 L23,18.9246875 C23,21.1754204 21.1754204,23 18.9246875,23 L13.0753125,23 C10.8245796,23 9,21.1754204 9,18.9246875 L9,13.0753125 C9,10.8245796 10.8245796,9 13.0753125,9 Z" id="Rectangle-Copy-9" fill="url(#linearGradient-1)" transform="translate(16.000000, 16.000000) scale(-1, -1) rotate(-45.000000) translate(-16.000000, -16.000000) "></path>
-        <use id="Rectangle-Copy-9" stroke="url(#linearGradient-2)" mask="url(#mask-4)" stroke-width="3.22" stroke-linecap="round" stroke-dasharray="34.02252302169799,4829999.425" transform="translate(16.000000, 16.000000) rotate(-45.000000) translate(-16.000000, -16.000000) " xlink:href="#path-3"></use>
-        <use id="Rectangle-Copy-9" stroke-opacity="0.5" stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="3.22" stroke-linecap="round" stroke-dasharray="34.02252302169799,4829999.425" transform="translate(16.000000, 16.000000) scale(1, -1) rotate(-45.000000) translate(-16.000000, -16.000000) " xlink:href="#path-5"></use>
+        <path d="M13.0753125,9 L18.9246875,9 C21.1754204,9 23,10.8245796 23,13.0753125 L23,18.9246875 C23,21.1754204 21.1754204,23 18.9246875,23 L13.0753125,23 C10.8245796,23 9,21.1754204 9,18.9246875 L9,13.0753125 C9,10.8245796 10.8245796,9 13.0753125,9 Z" id="Rectangle-Copy-9" fill-opacity="0.8" fill="#FFFFFF" transform="translate(16.000000, 16.000000) scale(-1, -1) rotate(-45.000000) translate(-16.000000, -16.000000) "></path>
+        <use id="Rectangle-Copy-9" stroke-opacity="0.8" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="3.22" stroke-linecap="round" stroke-dasharray="34.02252302169799,4829999.425" transform="translate(16.000000, 16.000000) rotate(-45.000000) translate(-16.000000, -16.000000) " xlink:href="#path-1"></use>
+        <use id="Rectangle-Copy-9" stroke-opacity="0.8" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="3.22" stroke-linecap="round" stroke-dasharray="34.02252302169799,4829999.425" transform="translate(16.000000, 16.000000) scale(1, -1) rotate(-45.000000) translate(-16.000000, -16.000000) " xlink:href="#path-3"></use>
     </g>
 </svg>
