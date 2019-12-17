@@ -48,6 +48,7 @@ const siteConfig = {
         primaryColor: '#12151C',
         secondaryColor: '#0F1117',
         dodgerBlue: '#3373ff',
+        darkBlue: '#2F5EE2',
         fadedGrey: '#3a3c43',
         aboveForeground: '#191c23',
     },
@@ -71,11 +72,16 @@ const siteConfig = {
 
     highlight: {
         // Highlight.js theme to use for syntax highlighting in code blocks.
-        theme: 'jsx',
+
+        theme: 'github',
     },
 
-    // Add custom scripts here that would be placed in <script> tags.
-    scripts: ['https://buttons.github.io/buttons.js'],
+    //  Add custom scripts here that would be placed in <script> tags.
+    scripts: [
+        'https://buttons.github.io/buttons.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+        '/js/code-block-buttons.js',
+    ],
 
     // On page navigation for the current documentation page.
     onPageNav: 'separate',
@@ -87,7 +93,8 @@ const siteConfig = {
     twitterImage: 'img/undraw_tweetstorm.svg',
 
     stylesheets: [
-        'https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Poppins:400,500,600,700,900&display=swap',
+        '/css/code-block-buttons.css',
+        'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Poppins:400,500,600,700,900&display=swap',
     ],
 
     // For sites with a sizable amount of content, set collapsible to true.

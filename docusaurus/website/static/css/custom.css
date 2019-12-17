@@ -26,9 +26,18 @@
 Global Overrides
 **/
 body {
-    background-color: $primaryColor;
-    color: rgba(255, 255, 255, 0.87);
-    font-family: 'Anonymous Pro', Arial, sans-serif;
+    /* background-color: $primaryColor; **/
+
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a {
+    color: $darkBlue;
+}
+
+a:hover {
+    color: $secondaryColor;
+    text-decoration: underline;
 }
 
 h1,
@@ -37,21 +46,17 @@ h3,
 h4,
 h5,
 h6 {
-    color: rgba(255, 255, 255, 0.87);
+    /* color: rgba(255, 255, 255, 0.87); */
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-a {
-    color: $dodgerBlue;
-}
-
-a:hover {
-    color: white;
+.paddingBottom {
+    padding-bottom: 16px;
 }
 
 /** Home Screen splash container **/
 .homeContainer {
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +64,7 @@ a:hover {
     background-image: url('/img/frostedGlassHeroImage.png');
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgba(255, 255, 255, 0.77);
 }
 
 .projectTitleContainer {
@@ -89,6 +95,10 @@ a:hover {
     color: $dodgerBlue;
 }
 
+.textMaxWidth {
+    max-width: 500px;
+}
+
 .tagline {
     display: block;
 }
@@ -99,7 +109,7 @@ a:hover {
     margin: 0px 16px 0px 16px;
 }
 
-.button {
+.buttonOverride {
     border-radius: 12px;
     color: rgba(255, 255, 255, 0.87);
     font-family: 'Poppins', Arial, sans-serif;
@@ -129,13 +139,15 @@ a:hover {
 }
 
 /**Main Container **/
-.mainContainer {
+.mainContainerOverride {
     padding: 0px;
 }
 
 /**Features**/
 .block {
-    min-height: 300px;
+    min-height: 400px;
+    color: rgba(255, 255, 255, 0.77);
+    background-color: $primaryColor;
 }
 
 .darkBlock {
@@ -149,4 +161,31 @@ a:hover {
 .gridContent {
     margin: 1em;
     padding-bottom: 2em;
+}
+
+.gridContent a:only-of-type {
+    color: $dodgerBlue;
+}
+
+.gridContent a:hover {
+    color: white;
+}
+
+.centeredContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-footer {
+    background-color: $secondaryColor;
+}
+
+.nav-home {
+    padding-right: 4em;
+}
+
+.icon {
+    stroke: white;
 }
