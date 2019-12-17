@@ -45,11 +45,12 @@ const siteConfig = {
 
     /* Colors for website */
     colors: {
-        primaryColor: '#12151C',
+        primaryColor: '#3373ff',
         secondaryColor: '#0F1117',
         dodgerBlue: '#3373ff',
         darkBlue: '#2F5EE2',
         fadedGrey: '#3a3c43',
+        backgroundColor: '#12151C',
         aboveForeground: '#191c23',
     },
 
@@ -99,7 +100,9 @@ const siteConfig = {
 
     // For sites with a sizable amount of content, set collapsible to true.
     // Expand/collapse the links and subcategories under categories.
-    // docsSideNavCollapsible: true,
+    docsSideNavCollapsible: true,
+
+    scrollToTop: true,
 
     // Show documentation's last contributor's name.
     // enableUpdateBy: true,
