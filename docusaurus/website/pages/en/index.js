@@ -12,6 +12,20 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+const Button = (props) => (
+    <div className={`pluginWrapper buttonWrapper`}>
+        <a
+            className={`button buttonOverride ${
+                props.variant === 'primary' ? 'primaryButton' : 'secondaryButton'
+            }`}
+            href={props.href}
+            target={props.target}
+        >
+            {props.children}
+        </a>
+    </div>
+);
+
 class HomeSplash extends React.Component {
     render() {
         const { siteConfig, language = '' } = this.props;
@@ -38,7 +52,7 @@ class HomeSplash extends React.Component {
         const ProjectTitle = () => (
             <div>
                 <div className={'projectTitleContainer'}>
-                    <Logo img_src={`${baseUrl}img/zenithLogo.svg`} />
+                    {/* <Logo img_src={`${baseUrl}img/zenithLogo.svg`} /> */}
                     <h2 className="projectTitle primaryText">{siteConfig.title}</h2>
                     <h2 className={'projectTitle'}> Design System</h2>
                 </div>
@@ -51,20 +65,6 @@ class HomeSplash extends React.Component {
                 <div className="promoRow">
                     <div className="pluginRowBlock">{props.children}</div>
                 </div>
-            </div>
-        );
-
-        const Button = (props) => (
-            <div className={`pluginWrapper buttonWrapper`}>
-                <a
-                    className={`button ${
-                        props.variant === 'primary' ? 'primaryButton' : 'secondaryButton'
-                    }`}
-                    href={props.href}
-                    target={props.target}
-                >
-                    {props.children}
-                </a>
             </div>
         );
 
@@ -106,19 +106,6 @@ const Index = (props) => {
         </Container>
     );
 
-    const GetStarted = () => (
-        <Block align={'center'} className={'block lightBlock'}>
-            {[
-                {
-                    content:
-                        'Zenith UI is built on existing libraries that encourage good front-end development',
-
-                    title: `Let's Get Started`,
-                },
-            ]}
-        </Block>
-    );
-
     const Features = () => (
         <Block
             align={'center'}
@@ -156,7 +143,7 @@ const Index = (props) => {
     );
 
     const What = () => (
-        <Block align={'left'} layout="twoColumn">
+        <Block align={'left'} layout="twoColumn" className={'block'}>
             {[
                 {
                     title: 'What is Zenith Exactly?',
@@ -170,10 +157,25 @@ const Index = (props) => {
         </Block>
     );
 
+    const GetStarted = () => (
+        <React.Fragment>
+            <div className={'centeredContainer block lightBlock'}>
+                <h2>Let's Get Started</h2>
+                <p align={'center'} className={'textMaxWidth paddingBottom'}>
+                    Zenith UI is built on existing libraries that encourage good front-end
+                    development
+                </p>
+                <Button variant={'primary'} href="#try">
+                    Read More
+                </Button>
+            </div>
+        </React.Fragment>
+    );
+
     return (
         <div>
             <HomeSplash siteConfig={siteConfig} language={language} />
-            <div className="mainContainer">
+            <div className="mainContainer mainContainerOverride">
                 <Features />
                 <What />
 
