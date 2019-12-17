@@ -26,8 +26,6 @@
 Global Overrides
 **/
 body {
-    /* background-color: $primaryColor; **/
-
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -147,7 +145,7 @@ h6 {
 .block {
     min-height: 400px;
     color: rgba(255, 255, 255, 0.77);
-    background-color: $primaryColor;
+    background-color: $backgroundColor;
 }
 
 .darkBlock {
