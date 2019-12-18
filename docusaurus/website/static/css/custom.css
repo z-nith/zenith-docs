@@ -22,9 +22,9 @@
 @media only screen and (min-width: 1500px) {
 }
 
-/**
-Global Overrides
-**/
+/********************
+ * GLOBAL OVERRIDES *
+ ********************/
 body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
@@ -44,15 +44,148 @@ h3,
 h4,
 h5,
 h6 {
-    /* color: rgba(255, 255, 255, 0.87); */
     font-family: 'Poppins', Arial, sans-serif;
 }
+
+/******************
+ * COMMON STYLING *
+ ******************/
 
 .paddingBottom {
     padding-bottom: 16px;
 }
 
-/** Home Screen splash container **/
+/** Special Text Styles **/
+.primaryText {
+    color: $primaryColor;
+}
+
+.textMaxWidth {
+    max-width: 500px;
+}
+
+.centeredContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/***********************
+ * COMPONENT OVERRIDES *
+ ***********************/
+/** Header Logo Start **/
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+    text-decoration-color: white;
+}
+/** Header Logo End **/
+
+/** Buttons Start **/
+.buttonWrapper {
+    margin: 0px 16px 0px 16px;
+}
+
+.buttonOverride {
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: none;
+    padding: 10px 24px 10px 24px;
+    min-width: 120px;
+    border: none;
+}
+
+.primaryButton {
+    background-color: $primaryColor;
+}
+
+.primaryButton:hover {
+    background-color: white;
+    color: $primaryColor;
+}
+
+.secondaryButton {
+    background-color: $fadedGrey;
+}
+
+.secondaryButton:hover {
+    background-color: white;
+    color: $fadedGrey;
+}
+
+.docs-next,
+.docs-prev {
+    font-family: 'Poppins', Arial, sans-serif;
+    border-color: $secondaryColor;
+    color: $secondaryColor;
+}
+
+.docs-next:hover,
+.docs-prev:hover {
+    background-color: $secondaryColor;
+    color: white;
+}
+/** Buttons End **/
+
+/** Blocks Start **/
+.block {
+    min-height: 400px;
+    color: rgba(255, 255, 255, 0.77);
+    background-color: $backgroundColor;
+}
+
+.darkBlock {
+    background-color: $secondaryColor;
+}
+
+.lightBlock {
+    background-color: $aboveForeground;
+}
+/** Blocks End **/
+
+/** Grid Start **/
+.gridContent {
+    margin: 1em;
+    padding-bottom: 2em;
+}
+
+.gridContent a:only-of-type {
+    color: $primaryColor;
+}
+
+.gridContent a:hover {
+    color: white;
+}
+/** Grid End **/
+
+/** Main Container Start **/
+.mainContainerOverride {
+    padding: 0px;
+}
+/** Main Container End **/
+
+/** Nav Start **/
+.nav-footer {
+    background-color: $secondaryColor;
+}
+
+.nav-home {
+    padding-right: 4em;
+}
+/** Nav End **/
+
+/**************************
+ * LANDING PAGE OVERRIDES *
+ **************************/
+
+/** Home Screen Start **/
 .homeContainer {
     min-height: 500px;
     display: flex;
@@ -88,102 +221,7 @@ h6 {
     padding-right: 8px;
 }
 
-/** Special Text Styles **/
-.primaryText {
-    color: $dodgerBlue;
-}
-
-.textMaxWidth {
-    max-width: 500px;
-}
-
 .tagline {
     display: block;
 }
-
-/** Components **/
-
-.buttonWrapper {
-    margin: 0px 16px 0px 16px;
-}
-
-.buttonOverride {
-    border-radius: 12px;
-    color: rgba(255, 255, 255, 0.87);
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: bold;
-    text-transform: none;
-    padding: 10px 24px 10px 24px;
-    min-width: 120px;
-    border: none;
-}
-
-.primaryButton {
-    background-color: $dodgerBlue;
-}
-
-.primaryButton:hover {
-    background-color: white;
-    color: $dodgerBlue;
-}
-
-.secondaryButton {
-    background-color: $fadedGrey;
-}
-
-.secondaryButton:hover {
-    background-color: white;
-    color: $fadedGrey;
-}
-
-/**Main Container **/
-.mainContainerOverride {
-    padding: 0px;
-}
-
-/**Features**/
-.block {
-    min-height: 400px;
-    color: rgba(255, 255, 255, 0.77);
-    background-color: $backgroundColor;
-}
-
-.darkBlock {
-    background-color: $secondaryColor;
-}
-
-.lightBlock {
-    background-color: $aboveForeground;
-}
-
-.gridContent {
-    margin: 1em;
-    padding-bottom: 2em;
-}
-
-.gridContent a:only-of-type {
-    color: $dodgerBlue;
-}
-
-.gridContent a:hover {
-    color: white;
-}
-
-.centeredContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-footer {
-    background-color: $secondaryColor;
-}
-
-.nav-home {
-    padding-right: 4em;
-}
-
-.icon {
-    stroke: white;
-}
+/** Home Screen End **/
