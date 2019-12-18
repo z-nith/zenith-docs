@@ -47,26 +47,11 @@ const siteConfig = {
     colors: {
         primaryColor: '#3373ff',
         secondaryColor: '#0F1117',
-        dodgerBlue: '#3373ff',
         darkBlue: '#2F5EE2',
         fadedGrey: '#3a3c43',
         backgroundColor: '#12151C',
         aboveForeground: '#191c23',
     },
-
-    /* Custom fonts for website */
-    /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
 
     // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
     copyright: `Copyright © ${new Date().getFullYear()} Zenith-UI`,
@@ -74,7 +59,7 @@ const siteConfig = {
     highlight: {
         // Highlight.js theme to use for syntax highlighting in code blocks.
 
-        theme: 'github',
+        theme: 'mono-blue',
     },
 
     //  Add custom scripts here that would be placed in <script> tags.
