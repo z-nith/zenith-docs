@@ -53,10 +53,15 @@ class HomeSplash extends React.Component {
             <div>
                 <div className={'projectTitleContainer'}>
                     {/* <Logo img_src={`${baseUrl}img/zenithLogo.svg`} /> */}
-                    <h2 className="projectTitle primaryText">{siteConfig.title}</h2>
-                    <h2 className={'projectTitle'}> Design System</h2>
+                    <h2 className="fade-in-bottom-no-delay primaryText projectTitle ">
+                        {siteConfig.title}
+                    </h2>
+                    <h2 className={'fade-in-bottom-no-delay projectTitle'}>
+                        {' '}
+                        Design System
+                    </h2>
                 </div>
-                <p className="tagline">{siteConfig.tagline}</p>
+                <p className="tagline fade-in-bottom-one">{siteConfig.tagline}</p>
             </div>
         );
 
@@ -70,7 +75,7 @@ class HomeSplash extends React.Component {
 
         return (
             <SplashContainer>
-                <div className="inner">
+                <div className="inner fade-in-bottom-two">
                     <ProjectTitle siteConfig={siteConfig} />
                     <PromoSection>
                         <Button variant={'primary'} href="#try">

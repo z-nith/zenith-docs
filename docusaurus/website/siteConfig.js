@@ -11,14 +11,17 @@
 // List of projects/orgs using your project for the users page.
 //const users = [];
 
+const path = require('path');
+
 const siteConfig = {
     title: 'Zenith', // Title for your website.
     tagline: 'Design Meets Developement',
-    url: 'https://your-docusaurus-test-site.com', // Your website URL
+    //url: 'https://your-docusaurus-test-site.com', // Your website URL
     baseUrl: '/', // Base URL for your project */
     // For github.io type URLs, you would set the url and baseUrl like:
     //   url: 'https://facebook.github.io',
     //   baseUrl: '/test-site/',
+    customDocsPath: path.basename(__dirname) + '/docs',
 
     // Used for publishing and more
     projectName: 'zenith',
@@ -29,8 +32,7 @@ const siteConfig = {
 
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
-        { doc: 'doc1', label: 'About' },
-        { doc: 'doc4', label: 'Guide' },
+        { doc: 'absoluteImports', label: 'Guide' },
         { page: 'help', label: 'Contribute' },
         { page: 'help', label: 'Github' },
     ],
@@ -85,7 +87,7 @@ const siteConfig = {
 
     // For sites with a sizable amount of content, set collapsible to true.
     // Expand/collapse the links and subcategories under categories.
-    docsSideNavCollapsible: true,
+    //docsSideNavCollapsible: true,
 
     scrollToTop: true,
 
@@ -93,7 +95,7 @@ const siteConfig = {
     // enableUpdateBy: true,
 
     // Show documentation's last update time.
-    // enableUpdateTime: true,
+    enableUpdateTime: true,
 
     // You may provide arbitrary config keys to be used as needed by your
     // template. For example, if you need your repo's URL...
