@@ -1,0 +1,59 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
+
+/********************
+ * GLOBAL OVERRIDES *
+ ********************/
+blockquote {
+    color: $backgroundColor;
+    background-color: rgba(51, 116, 255, 0.15);
+    border-left: 8px solid $primaryColor;
+}
+
+code {
+    color: $backgroundColor;
+    background-color: rgba(58, 60, 67, 0.08);
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a {
+    color: $darkBlue;
+}
+
+a:hover {
+    color: $secondaryColor;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+}

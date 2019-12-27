@@ -53,15 +53,11 @@ class HomeSplash extends React.Component {
             <div>
                 <div className={'projectTitleContainer'}>
                     {/* <Logo img_src={`${baseUrl}img/zenithLogo.svg`} /> */}
-                    <h2 className="fade-in-bottom-no-delay primaryText projectTitle ">
-                        {siteConfig.title}
+                    <h2 className="fade-in-bottom-no-delay projectTitle ">
+                        Great Boilerplates Come From Trial & Error
                     </h2>
-                    <h2 className={'fade-in-bottom-no-delay projectTitle'}>
-                        {' '}
-                        Design System
-                    </h2>
+                    <p className="fade-in-bottom-one tagline">{siteConfig.tagline}</p>
                 </div>
-                <p className="tagline fade-in-bottom-one">{siteConfig.tagline}</p>
             </div>
         );
 
@@ -75,7 +71,7 @@ class HomeSplash extends React.Component {
 
         return (
             <SplashContainer>
-                <div className="inner fade-in-bottom-two">
+                <div className="fade-in-bottom-two inner ">
                     <ProjectTitle siteConfig={siteConfig} />
                     <PromoSection>
                         <Button variant={'primary'} href="#try">
@@ -113,7 +109,7 @@ const Index = (props) => {
 
     const Features = () => (
         <Block
-            align={'center'}
+            align={'left'}
             layout="threeColumn"
             className={'block darkBlock'}
             gridBlockClassName={'gridContent'}
@@ -124,7 +120,7 @@ const Index = (props) => {
                     content: `At vero eos et dolore magnam aliquam causam ista, quae dices, 
                             libenter assentiar probabo, inquit, modo ista sis aequitate, quam nihil est, 
                             necesse est`,
-                    image: `${baseUrl}img/livingDocument.svg`,
+                    image: `${baseUrl}img/living_document.svg`,
                     imageAlign: 'top',
                 },
                 {
@@ -132,7 +128,7 @@ const Index = (props) => {
                     content: `At vero eos et dolore magnam aliquam causam ista, quae dices, 
                         libenter assentiar probabo, inquit, modo ista sis aequitate, quam nihil est, 
                         necesse est`,
-                    image: `${baseUrl}img/robustApp.svg`,
+                    image: `${baseUrl}img/robust_scalable.svg`,
                     imageAlign: 'top',
                 },
                 {
@@ -140,7 +136,7 @@ const Index = (props) => {
                     content: `At vero eos et dolore magnam aliquam causam ista, quae dices, 
                         libenter assentiar probabo, inquit, modo ista sis aequitate, quam nihil est, 
                         necesse est. assentiar probabo? [Contribute.](https://github.com/Jmeza081/zenith-ui)`,
-                    image: `${baseUrl}img/community.svg`,
+                    image: `${baseUrl}img/community_driven.svg`,
                     imageAlign: 'top',
                 },
             ]}
@@ -148,18 +144,31 @@ const Index = (props) => {
     );
 
     const What = () => (
-        <Block align={'left'} layout="twoColumn" className={'block'}>
-            {[
-                {
-                    title: 'What is Zenith Exactly?',
-                    content: `At vero eos et dolore magnam aliquam causam ista, quae dices, 
-                        libenter assentiar probabo, inquit, modo ista sis aequitate, quam nihil est, 
-                        necesse est`,
-                    image: `${baseUrl}img/componentsShowcase.svg`,
-                    imageAlign: 'right',
-                },
-            ]}
-        </Block>
+        <div className={'block'}>
+            <div className={'wrapper aboutBlock'}>
+                <div className={'aboutBlockText'}>
+                    <h5 className={'overline'}>Documentation</h5>
+                    <h2 className={'projectTitle'}>
+                        Years of reference & lessons learned: all in one guide
+                    </h2>
+                    <div className={'sepContainer'}>
+                        <div className={'sep'} />
+                    </div>
+                    <p className={'introText'}>
+                        At vero eos et dolore magnam aliquam causam ista, quae dices,
+                        libenter assentiar probabo, inquit, modo ista sis aequitate, quam
+                        nihil est, necesse est. assentiar probabo?
+                    </p>
+                </div>
+
+                <div>
+                    <img
+                        className={'aboutBlockImage'}
+                        src={`${baseUrl}img/components_showcase.png`}
+                    />
+                </div>
+            </div>
+        </div>
     );
 
     const GetStarted = () => (
@@ -181,9 +190,8 @@ const Index = (props) => {
         <div>
             <HomeSplash siteConfig={siteConfig} language={language} />
             <div className="mainContainer mainContainerOverride">
-                <Features />
                 <What />
-
+                <Features />
                 <GetStarted />
             </div>
         </div>

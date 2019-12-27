@@ -15,7 +15,8 @@ const path = require('path');
 
 const siteConfig = {
     title: 'Zenith', // Title for your website.
-    tagline: 'Design Meets Developement',
+    tagline: 'Zenith provides a production-ready React boilerplate with so much more',
+    disableTitleTagline: true,
     //url: 'https://your-docusaurus-test-site.com', // Your website URL
     baseUrl: '/', // Base URL for your project */
     // For github.io type URLs, you would set the url and baseUrl like:
@@ -32,8 +33,8 @@ const siteConfig = {
 
     // For no header links in the top nav bar -> headerLinks: [],
     headerLinks: [
-        { doc: 'absoluteImports', label: 'Guide' },
-        { page: 'help', label: 'Contribute' },
+        { doc: 'absoluteImports', label: 'About' },
+        { page: 'help', label: 'Guide' },
         { page: 'help', label: 'Github' },
     ],
 
@@ -41,7 +42,7 @@ const siteConfig = {
     //users,
 
     /* path to images for header/footer */
-    headerIcon: 'img/zenithLogo.svg',
+    // headerIcon: 'img/zenithLogo.svg',
     footerIcon: 'img/zenithLogo.svg',
     favicon: 'img/favicon.png',
 
