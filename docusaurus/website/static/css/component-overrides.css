@@ -2,17 +2,6 @@
  * COMPONENT OVERRIDES *
  ***********************/
 
-.fixedHeaderContainer {
-    background: transparent;
-    padding-top: 20px;
-    /* position: relative; */
-}
-
-.navPusher {
-    padding-top: 0;
-    margin: 0px;
-}
-
 /** Header Logo Start **/
 header a {
     color: white;
@@ -73,42 +62,7 @@ header a:hover {
 }
 /** Buttons End **/
 
-/** Blocks Start **/
-.block {
-    min-height: 400px;
-    color: rgba(255, 255, 255, 0.77);
-    background-color: $backgroundColor;
-}
-
-/** Blocks End **/
-
-/** Grid Start **/
-.gridContent {
-    margin: 1em;
-    padding-bottom: 2em;
-}
-
-.gridContent a:only-of-type {
-    color: $primaryColor;
-}
-
-.gridContent a:hover {
-    color: white;
-}
-/** Grid End **/
-
-/** Main Container Start **/
-.mainContainerOverride {
-    padding: 0px;
-}
-/** Main Container End **/
-
 /** Nav Start **/
 .nav-footer {
     background-color: $secondaryColor;
 }
-
-.nav-home {
-    padding-right: 4em;
-}
-/** Nav End **/

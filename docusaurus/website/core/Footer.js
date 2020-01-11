@@ -65,9 +65,6 @@ class Footer extends React.Component {
                     <div>
                         <h5>Follow Us</h5>
                         <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-                        <i data-feather="github" className={'icon'}>
-                            Hello
-                        </i>
                         <a href="https://github.com/">GitHub</a>
                         <a
                             className="github-button"
