@@ -1,42 +1,193 @@
-# Motivation
+This website was created with [Docusaurus](https://docusaurus.io/).
 
-This repository's purpose serves as a thought experiment of Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/) principles in React. Rather than serving as an actual UI library (though there are plans to implement a standalone repo for such a purpose), the main goal of this project is engineer a scalable frontend application that adheres to the following principles:
+# What's In This Document
 
-1. Extensibility - The project should be able to be extended with minimal effort
-2. Reusability (Modularity) - The project should consist of composite components in accordance with the Atomic Design philosophy.
-3. Readability - The project structure should be easy to read relative to it's structure.
+* [Get Started in 5 Minutes](#get-started-in-5-minutes)
+* [Directory Structure](#directory-structure)
+* [Editing Content](#editing-content)
+* [Adding Content](#adding-content)
+* [Full Documentation](#full-documentation)
 
-More importantly:
+# Get Started in 5 Minutes
 
-> To serve as a template for other client-side applications built in React
+1. Make sure all the dependencies for the website are installed:
 
-# Technologies used in this project
+```sh
+# Install dependencies
+$ yarn
+```
+2. Run your dev server:
 
-This project is built on a myriad of technologies, all of which allow for quick-start up and implementation
+```sh
+# Start the site
+$ yarn start
+```
 
-The following technologies are the main frameworks in building this project
+## Directory Structure
 
-1. [React](https://reactjs.org/) - Version `>16` is necessary to run this project at least
-2. [Material-UI](https://material-ui.com/) - A themeable component library to serve as the scaffolding for this project. Even though most of these component adhere to Material-UI standards (for the most part atleast), the goal is to eventually strip the solution of the component library if necessary
-3. [@material-ui/styles](https://www.npmjs.com/package/@material-ui/styles) - This is the main styling solution for the application. Although branded under Material-UI, the package is a standalone styling solution for any React application. This allows us to strip the project of Material UI components without hindering the project structure.
-4. [Next.js](https://nextjs.org/) - Enables the benefits of SSR (Server-Side-Rendering) for quick rendering times and easy deployments.
+Your project file structure should look something like this
 
-These technologies are more for showcasing and test components in isolation
+```
+my-docusaurus/
+  docs/
+    doc-1.md
+    doc-2.md
+    doc-3.md
+  website/
+    blog/
+      2016-3-11-oldest-post.md
+      2017-10-24-newest-post.md
+    core/
+    node_modules/
+    pages/
+    static/
+      css/
+      img/
+    package.json
+    sidebar.json
+    siteConfig.js
+```
 
-1. [Storybook](https://storybook.js.org/)
-2. [@storybook/addon-docs](https://github.com/storybookjs/storybook/tree/master/addons#docspage)
-3. [@storybook/addon-storysource](https://github.com/storybookjs/storybook/tree/master/addons/storysource)
-4. [@storybook/addon-viewport](https://github.com/storybookjs/storybook/tree/master/addons/viewport)
-5. [@storybook/addon-a11y](https://github.com/storybookjs/storybook/tree/master/addons/viewport)
-6. [storybook-addon-responsive-views](https://github.com/vizeat/storybook-addon-responsive-views)
+# Editing Content
 
-These technologies facilitate better client-side data validation of textfields and state
+## Editing an existing docs page
 
-1. [yup](https://github.com/jquense/yup)
-2. [formik](https://github.com/jaredpalmer/formik)
+Edit docs by navigating to `docs/` and editing the corresponding document:
 
-# Quick Start
+`docs/doc-to-be-edited.md`
 
-You can view all components by running `Storybook` via `yarn storybook`
+```markdown
+---
+id: page-needs-edit
+title: This Doc Needs To Be Edited
+---
 
-# Contributing
+Edit me...
+```
+
+For more information about docs, click [here](https://docusaurus.io/docs/en/navigation)
+
+## Editing an existing blog post
+
+Edit blog posts by navigating to `website/blog` and editing the corresponding post:
+
+`website/blog/post-to-be-edited.md`
+```markdown
+---
+id: post-needs-edit
+title: This Blog Post Needs To Be Edited
+---
+
+Edit me...
+```
+
+For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
+
+# Adding Content
+
+## Adding a new docs page to an existing sidebar
+
+1. Create the doc as a new markdown file in `/docs`, example `docs/newly-created-doc.md`:
+
+```md
+---
+id: newly-created-doc
+title: This Doc Needs To Be Edited
+---
+
+My new content here..
+```
+
+1. Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+
+```javascript
+// Add newly-created-doc to the Getting Started category of docs
+{
+  "docs": {
+    "Getting Started": [
+      "quick-start",
+      "newly-created-doc" // new doc here
+    ],
+    ...
+  },
+  ...
+}
+```
+
+For more information about adding new docs, click [here](https://docusaurus.io/docs/en/navigation)
+
+## Adding a new blog post
+
+1. Make sure there is a header link to your blog in `website/siteConfig.js`:
+
+`website/siteConfig.js`
+```javascript
+headerLinks: [
+    ...
+    { blog: true, label: 'Blog' },
+    ...
+]
+```
+
+2. Create the blog post with the format `YYYY-MM-DD-My-Blog-Post-Title.md` in `website/blog`:
+
+`website/blog/2018-05-21-New-Blog-Post.md`
+
+```markdown
+---
+author: Frank Li
+authorURL: https://twitter.com/foobarbaz
+authorFBID: 503283835
+title: New Blog Post
+---
+
+Lorem Ipsum...
+```
+
+For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
+
+## Adding items to your site's top navigation bar
+
+1. Add links to docs, custom pages or external links by editing the headerLinks field of `website/siteConfig.js`:
+
+`website/siteConfig.js`
+```javascript
+{
+  headerLinks: [
+    ...
+    /* you can add docs */
+    { doc: 'my-examples', label: 'Examples' },
+    /* you can add custom pages */
+    { page: 'help', label: 'Help' },
+    /* you can add external links */
+    { href: 'https://github.com/facebook/docusaurus', label: 'GitHub' },
+    ...
+  ],
+  ...
+}
+```
+
+For more information about the navigation bar, click [here](https://docusaurus.io/docs/en/navigation)
+
+## Adding custom pages
+
+1. Docusaurus uses React components to build pages. The components are saved as .js files in `website/pages/en`:
+1. If you want your page to show up in your navigation header, you will need to update `website/siteConfig.js` to add to the `headerLinks` element:
+
+`website/siteConfig.js`
+```javascript
+{
+  headerLinks: [
+    ...
+    { page: 'my-new-custom-page', label: 'My New Custom Page' },
+    ...
+  ],
+  ...
+}
+```
+
+For more information about custom pages, click [here](https://docusaurus.io/docs/en/custom-pages).
+
+# Full Documentation
+
+Full documentation can be found on the [website](https://docusaurus.io/).
